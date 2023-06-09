@@ -110,9 +110,9 @@ const Header = () => {
                         </span>
                       </div>
                       <div className="tp-header-contact-content">
-                        {/* <h5>Hotline:</h5> */}
+                        <h5>Hotline:</h5>
                         <p>
-                          {/* <a href="tel:402-763-282-46">+(402) 763 282 46</a> */}
+                          <a href="tel:254712345678">(+254) 712345678</a>
                         </p>
                       </div>
                     </div>
@@ -135,7 +135,11 @@ const Header = () => {
                     <Image src={logo} alt="logo" />
                   </Link>
                 </div> */}
-                <h4>Virtual Vault</h4>
+                <div>
+                    <Link href="/">
+                        <h2 className='logo'>Virtual Vault</h2>
+                        </Link>
+                      </div>
               </div>
               <div className="col-xl-6 col-lg-6 col-md-6 d-none d-md-block">
                 <div className="tp-header-sticky-menu main-menu menu-style-1 d-none d-lg-block">

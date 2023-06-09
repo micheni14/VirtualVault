@@ -61,12 +61,16 @@ const HeaderTwo = ({ style_2 = false }) => {
                 <div className="row align-items-center">
                   <div className="col-xl-2 col-lg-5 col-md-5 col-sm-4 col-6">
                     {/* <div className="logo">
-                      <Link href="/">
+                    <Link>
                         <Image src={logo} alt="logo" priority />
                       </Link>
                   
                     </div> */}
-                    <h2 className='logo'>Virtual Vault</h2>
+                    <div>
+                    <Link href="/">
+                        <h2 className='logo'>Virtual Vault</h2>
+                        </Link>
+                      </div>
                   </div>
                   <div className="col-xl-5 d-none d-xl-block">
                     <div className="main-menu menu-style-2">

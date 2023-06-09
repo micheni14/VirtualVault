@@ -12,6 +12,8 @@ const HeaderMainRight = ({ setIsCanvasOpen }) => {
   const { wishlist } = useSelector((state) => state.wishlist);
   const { quantity } = useCartInfo();
   const dispatch = useDispatch()
+
+  console.log("userInfo is",userInfo)
   return (
     <div className="tp-header-main-right d-flex align-items-center justify-content-end">
       <div className="tp-header-login d-none d-lg-block">
@@ -44,6 +46,7 @@ const HeaderMainRight = ({ setIsCanvasOpen }) => {
                 <span>Hello,</span>
               </Link>
             )}
+
             {userInfo?.name && <span>Hello, {userInfo?.name}</span>}
             <div className="tp-header-login-title">
               {!userInfo?.name && <Link href="/login">Sign In</Link>}

@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
   endpoints: (builder) => ({
     registerUser: builder.mutation({
       query: (data) => ({
-        url: "api/user/signup",
+        url: "https://virtualvault.onrender.com/api/user/signup",
         method: "POST",
         body: data,
       }),
@@ -46,7 +46,7 @@ export const authApi = apiSlice.injectEndpoints({
     // login
     loginUser: builder.mutation({
       query: (data) => ({
-        url: "api/user/login",
+        url: "https://virtualvault.onrender.com/api/user/Login",
         method: "POST",
         body: data,
       }),
