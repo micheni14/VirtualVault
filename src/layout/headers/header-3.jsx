@@ -35,7 +35,7 @@ const HeaderThree = () => {
                       <Image className="logo-dark" src={logo_dark} alt="logo" />
                     </Link>
                   </div>
-                </div> */}
+                // </div> */}
                 <div className='col-xl-2 col-lg-2 col-6'>
                   <Link href="/">
                         <h2 className='logo'>Virtual Vault</h2>

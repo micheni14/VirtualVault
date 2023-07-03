@@ -11,7 +11,7 @@ export const categoryApi = apiSlice.injectEndpoints({
       }),
     }),
     getShowCategory: builder.query({
-      query: () => `/api/category/show`
+      query: () => "https://virtualvault.onrender.com/api/category/show"
     }),
     getProductTypeCategory: builder.query({
       query: (type) => `/api/category/show/${type}`

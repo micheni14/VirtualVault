@@ -7,7 +7,7 @@ import Link from "next/link";
 // internal
 import slider_img_1 from "@assets/img/slider/slider-img-1.png";
 import slider_img_2 from "@assets/img/slider/slider-img-2.png";
-import slider_img_3 from "@assets/img/slider/slider-img-3.png";
+// import slider_img_3 from "@assets/img/slider/slider-img-3.jpg";
 import shape_1 from "@assets/img/slider/shape/slider-shape-1.png";
 import shape_2 from "@assets/img/slider/shape/slider-shape-2.png";
 import shape_3 from "@assets/img/slider/shape/slider-shape-3.png";
@@ -21,7 +21,7 @@ const sliderData = [
     pre_title: { text: "Starting at", price: 274 },
     title: "Virtual Vault Exclusive sale",
     subtitle: {
-      text_1: "Exclusive offer ",
+      text_1: "Exclusive offer on all men's wear ",
       percent: 35,
       text_2: "off this week",
     },
@@ -33,25 +33,25 @@ const sliderData = [
     pre_title: { text: "Starting at", price: 999 },
     title: "Virtual Vault Exclusive sale",
     subtitle: {
-      text_1: "Exclusive offer ",
-      percent: 10,
+      text_1: "Exclusive offer on all women wear ",
+      percent: 35,
       text_2: "off this week",
     },
     img: slider_img_2,
     green_bg: true,
   },
-  {
-    id: 3,
-    pre_title: { text: "Starting at", price: 999 },
-    title: "Virtual Vault Exclusive sale",
-    subtitle: {
-      text_1: "Exclusive offer ",
-      percent: 10,
-      text_2: "off this week",
-    },
-    img: slider_img_3,
-    is_light: true,
-  },
+  // {
+  //   id: 3,
+  //   pre_title: { text: "Starting at", price: 999 },
+  //   title: "Virtual Vault Exclusive sale",
+  //   subtitle: {
+  //     text_1: "Exclusive offer ",
+  //     percent: 10,
+  //     text_2: "off this week",
+  //   },
+  //   // img: slider_img_3,
+  //   black_bg: true,
+  // },
 ];
 
 function Shape({ img, num }) {
@@ -96,7 +96,7 @@ const HomeHeroSlider = () => {
               key={item.id}
               className={`tp-slider-item tp-slider-height d-flex align-items-center ${
                 item?.green_bg
-                  ? "green-dark-bg"
+                  ? "black-bg"
                   : item?.is_light
                   ? "is-light"
                   : ""
@@ -106,11 +106,11 @@ const HomeHeroSlider = () => {
               <div className="tp-slider-shape">
                 <Shape img={shape_1} num="1" />
                 <Shape img={shape_2} num="2" />
-                <Shape img={shape_3} num="3" />
-                <Shape img={shape_4} num="4" />
+                <Shape img={shape_3} num="3" />  
+                <Shape img={shape_4} num="4" /> 
               </div>
               <div className="container">
-                <div className="row align-items-center">
+                <div className="row align-items-center mt-3">
                   <div className="col-xl-5 col-lg-6 col-md-6">
                     <div className="tp-slider-content p-relative z-index-1">
                       <span>

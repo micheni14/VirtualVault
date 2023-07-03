@@ -5,21 +5,21 @@ export const feature_data = [
   {
     icon: <Delivery />,
     title: 'Free Delivery',
-    subtitle: 'Orders from all item'
+    subtitle: 'Orders from all items '
   },
   {
     icon: <Refund />,
-    title: 'Return & Refund',
-    subtitle: 'Money back guarantee'
+    title: 'Return & Refund ',
+    subtitle: 'Money back guarantee '
   },
   {
     icon: <Discount />,
-    title: 'Member Discount',
+    title: 'Customer Discount',
     subtitle: 'Onevery order over $140.00'
   },
   {
     icon: <Support />,
-    title: 'Support 24/7',
+    title: 'Order from us',
     subtitle: 'Contact us 24 hours a day'
   },
 ]

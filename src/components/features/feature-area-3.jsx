@@ -12,7 +12,7 @@ const FeatureAreaThree = () => {
               <div key={i} className="tp-feature-item-2 d-flex align-items-start mb-40">
                 <div className="tp-feature-icon-2 mr-10">
                   <span>
-                   {item.icon}
+                  {item.icon}
                   </span>
                 </div>
                 <div className="tp-feature-content-2">

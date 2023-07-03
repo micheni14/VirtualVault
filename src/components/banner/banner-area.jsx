@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 // internal
 import { ArrowRight } from "@/svg";
-import banner_1 from "@assets/img/product/banner/product-banner-1.jpg";
+import banner_1 from "@assets/img/slider/slider-img-1.png";
 import banner_2 from "@assets/img/product/banner/product-banner-2.jpg";
 
 
@@ -15,7 +15,7 @@ function BannerItem({ sm = false, bg, title }) {
       } tp-banner-height p-relative mb-30 z-index-1 fix`}
     >
       <div
-        className="tp-banner-thumb include-bg transition-3"
+        className="tp-banner-thumb include-bg transition-3 bg-dark"
         style={{ backgroundImage: `url(${bg.src})` }}
       ></div>
       <div className="tp-banner-content">
@@ -45,7 +45,7 @@ const BannerArea = () => {
               bg={banner_1}
               title={
                 <>
-                  Smartphone <br /> BLU G91 Pro 2022
+                  Blue dresses<br /> in all outlets
                 </>
               }
             />
@@ -53,7 +53,7 @@ const BannerArea = () => {
           <div className="col-xl-4 col-lg-5">
             <BannerItem
               sm={true}
-              bg={banner_2}
+              bg={banner_1}
               title={
                 <>
                   HyperX Cloud II <br /> Wireless
