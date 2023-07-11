@@ -56,7 +56,7 @@ const BannerArea = () => {
               bg={banner_1}
               title={
                 <>
-                  HyperX Cloud II <br /> Wireless
+                  Orange<br /> dress
                 </>
               }
             />
