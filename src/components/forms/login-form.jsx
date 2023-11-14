@@ -40,6 +40,7 @@ const LoginForm = () => {
         if (data?.data) {
           notifySuccess("Login successfully");
           router.push(redirect || "/");
+          
         }
         else {
           notifyError(data?.error?.data?.error)

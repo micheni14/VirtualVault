@@ -11,7 +11,8 @@ import { useRegisterUserMutation } from "@/redux/features/auth/authApi";
 
 // schema
 const schema = Yup.object().shape({
-  name: Yup.string().required().label("Name"),
+  firstname: Yup.string().required().label("Name"),
+ lastname: Yup.string().required().label("Name"),
   email: Yup.string().required().email().label("Email"),
   password: Yup.string().required().min(6).label("Password"),
   remember: Yup.bool()
@@ -30,37 +31,57 @@ const RegisterForm = () => {
   });
   // on submit
   const onSubmit = (data) => {
+    console.log('Form Data:', data);
     registerUser({
-      name: data.name,
+      firstname: data?.firstname,
+      lastname: data?.lastname,
       email: data.email,
       password: data.password,
     }).then((result) => {
       if (result?.error) {
         notifyError("Register Failed");
+        console.log(data, "data is")
       } else {
         notifySuccess(result?.data?.message);
         // router.push(redirect || "/");
+        // console.log(data, "data")
       }
     });
     reset();
   };
+ 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <div className="tp-login-input-wrapper">
         <div className="tp-login-input-box">
           <div className="tp-login-input">
             <input
-              {...register("name", { required: `Name is required!` })}
-              id="name"
-              name="name"
+              {...register("firstname", { required: `Name is required!` })}
+              id="firstname"
+              name="firstname"
               type="text"
               placeholder="John Doe"
             />
           </div>
           <div className="tp-login-input-title">
-            <label htmlFor="name">Your Name</label>
+            <label htmlFor="firstname">First Name</label>
           </div>
-          <ErrorMsg msg={errors.name?.message} />
+          <ErrorMsg msg={errors.firstname?.message} />
+        </div>
+        <div className="tp-login-input-box">
+          <div className="tp-login-input">
+            <input
+              {...register("lastname", { required: `Name is required!` })}
+              id="lastname"
+              name="lastname"
+              type="text"
+              placeholder="John Doe"
+            />
+          </div>
+          <div className="tp-login-input-title">
+            <label htmlFor="lastname">last Name</label>
+          </div>
+          <ErrorMsg msg={errors.lastname?.message} />
         </div>
         <div className="tp-login-input-box">
           <div className="tp-login-input">

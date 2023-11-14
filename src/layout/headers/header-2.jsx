@@ -38,7 +38,7 @@ const HeaderTwo = ({ style_2 = false }) => {
                       </a>
                     </div>
                     <div className="tp-header-info-item">
-                      <a href="tel:0712345678">
+                      <a href="tel:0727503371">
                         <span>
                           <PhoneTwo />
                         </span>

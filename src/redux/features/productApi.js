@@ -4,7 +4,7 @@ export const productApi = apiSlice.injectEndpoints({
   overrideExisting: true,
   endpoints: (builder) => ({
     getAllProducts: builder.query({
-      query: () => `http://api.virtualvault.lol/api/product//all`,
+      query: () => `http://api.virtualvault.lol/api/products`,
       providesTags:['Products']
     }),
     getProductType: builder.query({
@@ -25,7 +25,7 @@ export const productApi = apiSlice.injectEndpoints({
     }),
     // get single product
     getProduct: builder.query({
-      query: (id) => `/api/product/single-product/${id}`,
+      query: (productId) => ` http://api.virtualvault.lol/api/products/${productId}`,
       providesTags: (result, error, arg) => [{ type: "Product", id: arg }],
       invalidatesTags: (result, error, arg) => [
         { type: "RelatedProducts", id:arg },
@@ -50,3 +50,4 @@ export const {
   useGetProductQuery,
   useGetRelatedProductsQuery,
 } = productApi;
+

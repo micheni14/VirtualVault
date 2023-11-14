@@ -112,7 +112,7 @@ const Header = () => {
                       <div className="tp-header-contact-content">
                         <h5>Hotline:</h5>
                         <p>
-                          <a href="tel:254712345678">(+254) 712345678</a>
+                          <a href="tel:254712345678">(+254)727503371</a>
                         </p>
                       </div>
                     </div>

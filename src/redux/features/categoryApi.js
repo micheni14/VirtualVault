@@ -11,10 +11,10 @@ export const categoryApi = apiSlice.injectEndpoints({
       }),
     }),
     getShowCategory: builder.query({
-      query: () => "https://virtualvault.onrender.com/api/category/show"
+      query: () => "http://api.virtualvault.lol/api/categories"
     }),
     getProductTypeCategory: builder.query({
-      query: (type) => `/api/category/show/${type}`
+      query: (categoryId) => ` http://api.virtualvault.lol/api/categories/${categoryId}`
     }),
   }),
 });

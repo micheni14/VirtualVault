@@ -77,7 +77,7 @@ export const authApi = apiSlice.injectEndpoints({
     }),
     // get me
     getUser: builder.query({
-      query: () => "api/user/me",
+      query: () => "http://api.virtualvault.lol/api/user/profile",
 
       async onQueryStarted(arg, { queryFulfilled, dispatch }) {
         try {

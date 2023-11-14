@@ -14,6 +14,7 @@ const ProductDetailsPage = ({ query }) => {
   const { data: product, isLoading, isError } = useGetProductQuery(query.id);
   // decide what to render
   let content = null;
+
   if (isLoading) {
     content = <PrdDetailsLoader loading={isLoading}/>;
   }

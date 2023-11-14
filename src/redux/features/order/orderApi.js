@@ -7,7 +7,7 @@ export const authApi = apiSlice.injectEndpoints({
     // createPaymentIntent
     createPaymentIntent: builder.mutation({
       query: (data) => ({
-        url: "api/order/create-payment-intent",
+        url: " http://api.virtualvault.lol/api/order/create",
         method: "POST",
         body: data,
       }),

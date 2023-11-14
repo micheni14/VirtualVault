@@ -29,6 +29,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
     }
   }, [reviews]);
 
+  console.log(data, "rada")
   // handle add product
   const handleAddProduct = (prd) => {
     dispatch(add_cart_product(prd));
